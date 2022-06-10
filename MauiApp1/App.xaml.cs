@@ -2,7 +2,6 @@
 
 public partial class App : Application
 {
-	public static bool IsLoggedIn = false;
 	public App()
 	{
 		InitializeComponent();
