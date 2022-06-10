@@ -1,47 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Views.LoginPage"             
-             xmlns:viewmodels="clr-namespace:MauiApp1.ViewModels"             
-             x:DataType="viewmodels:LoginViewModel"  
+             x:Class="MauiApp1.Views.LoginPage"  
              Title="LoginPage">
-    <Grid>
-        <StackLayout Margin="20">
-            <StackLayout Margin="0,20">
-                <Label FontFamily="OpenSansRegular"  
-                       FontSize="16" Text="Username"/>
-                <Grid Margin="0,5">
-                    <Frame Opacity="0.3" BackgroundColor="LightGray" CornerRadius="5"/>
-                    <Entry BackgroundColor="Transparent" 
-                        Placeholder="Enter username" 
-                        TextColor="White" Margin="5,0" 
-                        Text="{Binding UserName}"
-                        PlaceholderColor="White" />
-                </Grid>
-
-                <Label FontFamily="OpenSansRegular" 
-                       FontSize="16" Text="Password"/>
-                <Grid Margin="0,5">
-                    <Frame Opacity="0.3" BackgroundColor="LightGray" CornerRadius="5"/>
-                    <Entry BackgroundColor="Transparent" 
-                        Placeholder="Enter password" 
-                        TextColor="White" Margin="5,0" 
-                        Text="{Binding Password}"
-                        PlaceholderColor="White" 
-                        IsPassword="True"/>
-                </Grid>
-            </StackLayout>
-
-            <Button Margin="0,15" Text="Sign in" Command="{Binding LoginCommand}"  />
-            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                <Label FontFamily="OpenSansRegular" TextColor="Grey" 
-                       FontSize="16" Text="About"  VerticalOptions="EndAndExpand" 
-                       HorizontalOptions="EndAndExpand">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding AboutCommand}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-            </StackLayout>
-        </StackLayout>
-    </Grid>
+    <StackLayout>
+        <Label Text="Welcome to Login Page!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+    </StackLayout>
 </ContentPage>
